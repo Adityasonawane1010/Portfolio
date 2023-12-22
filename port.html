@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Oswald:wght@300&family=Poppins&display=swap"
         rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
         * {
             font-family: 'Comfortaa', sans-serif;
@@ -21,6 +24,7 @@
             background-image: url(Savin-NY-Website-Background-Web.jpg);
             margin: 0px;
             padding: 0px;
+            background-repeat: repeat-y;
 
         }
 
@@ -159,53 +163,86 @@
             margin-left: 85px;
 
         }
-        .sociallinks{
+
+        .sociallinks {
             font-size: 30px;
             display: inline-block;
             margin-top: 32px;
             margin-right: 50px;
         }
-        #socialbox{
-           width: 450px;
-            }
-          /* linkdin logo */
-            .linkdin{
-                color: gray;
-                font-size: 50px;
-                margin: 10px;
-                
-            }
-            .linkdin:hover{
-                color: rgb(128, 128, 175);
-            }
-            /* twitter logo */
-            .twitter{
-                color: gray;
-                font-size: 50px;
-                margin: 10px;
-            }
-            .twitter:hover{
-                color: rgb(128, 128, 175);;
-            }
-            /* git logo */
-            .git{
-                color: gray;
-                font-size: 50px;
-                margin: 10px;
-            }
-            .git:hover{
-                color: rgb(128, 128, 175);
-            }
-            /* instagram logo */
-            .instagram{
-                color: gray;
-                font-size: 50px;
-                margin: 10p10
-            }
-            .instagram:hover{
-                color: rgb(128, 128, 175);
-            }
-      
+
+        #socialbox {
+            width: 1000px;
+        }
+
+        /* linkdin logo */
+        .linkdin {
+            color: gray;
+            font-size: 50px;
+            margin: 10px;
+
+        }
+
+        .linkdin:hover {
+            color: rgb(128, 128, 175);
+        }
+
+        /* twitter logo */
+        .twitter {
+            color: gray;
+            font-size: 50px;
+            margin: 10px;
+        }
+
+        .twitter:hover {
+            color: rgb(128, 128, 175);
+            ;
+        }
+
+        /* git logo */
+        .git {
+            color: gray;
+            font-size: 50px;
+            margin: 10px;
+        }
+
+        .git:hover {
+            color: rgb(128, 128, 175);
+        }
+
+        /* instagram logo */
+        .instagram {
+            color: gray;
+            font-size: 50px;
+            margin: 10p10
+        }
+
+        .instagram:hover {
+            color: rgb(128, 128, 175);
+        }
+
+        .aboutme {
+            position: absolute;
+            top: 527px;
+            margin-left: 0px;
+            font-size: 38px;
+            width: 200px;
+        }
+
+        /* Experience CSS */
+        .box {
+          
+            margin:0px;
+            padding: 5px;
+            width: 250px;
+
+        }
+        .box h2{
+            font-size: 45px;
+            margin-left: 0px;
+            padding-left: 0px;
+         }
+         /* skill */
     </style>
 </head>
 
@@ -216,7 +253,7 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>About Me</li>
                 <li><a href="#"></a>Projects</li>
                 <li><a href="#"></a>Experience</li>
                 <li><a href="#"></a>Contact</li>
@@ -233,28 +270,32 @@
 
             <button id="button1"><a href="#">Download CV</a></button>
             <button id="button2"><a href="#">Hire Me</a></button>
-     <div id="socialbox">
-            <section class="sociallinks">
-    
-                <span>
-                    <a href="https://www.linkedin.com/" target="_blank" class="linkdin"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </span>
-                <span>
-                   <a href="https://www.github.com/" target="_blank" class="git"><ion-icon name="logo-github"></ion-icon></a> 
-                </span>
-                <span>
-                   <a href="https://www.twitter.com" target="_blank" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a>
-                </span>
-                <span>
-                    <a href="https://www.instagram.com" target="_blank" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a>
-                </span>
-            
-        </section>
-    </div>
+            <div id="socialbox">
+                <section class="sociallinks">
+
+                    <span>
+                        <a href="https://www.linkedin.com/" target="_blank" class="linkdin"><ion-icon
+                                name="logo-linkedin"></ion-icon></a>
+                    </span>
+                    <span>
+                        <a href="https://www.github.com/" target="_blank" class="git"><ion-icon
+                                name="logo-github"></ion-icon></a>
+                    </span>
+                    <span>
+                        <a href="https://www.twitter.com" target="_blank" class="twitter"><ion-icon
+                                name="logo-twitter"></ion-icon></a>
+                    </span>
+                    <span>
+                        <a href="https://www.instagram.com" target="_blank" class="instagram"><ion-icon
+                                name="logo-instagram"></ion-icon></a>
+                    </span>
+
+                </section>
+            </div>
         </div>
 
-       
-    
+
+
 
         <div class="myimage">
             <img src="WhatsApp Image 2023-12-22 at 10.50.08 AM.jpeg" alt="" height="400px" width="400px">
@@ -262,12 +303,77 @@
 
 
     </section>
+    <section class="about">
+
+        <div class="aboutme">
+            <h2 class="aboutme"> About Me</h2>
+        </div>
+        <div class="myinfo">
+            <p class="description" style="margin-top: 441px;"><em>Focused professional having excellent technical and
+                communication skills, and
+                offering 6 years of experience in Computer industry. Proficient at designing and formulating test
+                automation frameworks, writing code in various languages, feature development and implementation.
+                Specialize in thinking outside the box to find unique solutions to difficult engineering problems.</em></p>
+
+        </div>
+    </section>
+    <!-- Experience -->
+    <div class="box">
+        <h2>Experience</h2>
+        <div class="experience-desc">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ipsa, voluptas deleniti velit aperiam sed
+                sunt saepe nihil e</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3>Sr Software Engineer</h3>
+        <div class="Srsoftware">
+
+            <div class="company">
+                <p>EON IT Pune</p>
+            </div>
+            <div class="years">
+                <p>April 2018-Present</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <h3>Sr Software Engineer</h3>
+        <div class="Srsoftware">
+
+            <div class="company">
+                <p>HSBC Mumbai</p>
+            </div>
+            <div class="years">
+                <p>April 2016-April 2018</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <h3>Software Engineer</h3>
+        <div class="software">
+
+            <div class="company">
+                <p>Mastercard Pune</p>
+            </div>
+            <div class="years">
+                <p>July 2014-March 2016</p>
+            </div>
+        </div>
+
+        <div class="skillsbox">
+            <h2>What Skills I Have</h2>
+            <div class="button">
+                <button>Java</button>
+                <button>Kotlin</button>
+                <button>Dart</button>
+                <button>Flutter</button>
+            </div>
+
+        </div>
 
 
-
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
